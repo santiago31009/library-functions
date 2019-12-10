@@ -1,0 +1,22 @@
+'use strict';
+var books = [];
+
+var addBook = function(title, author, location) {
+  this.title = title;
+  this.author = author;
+  this.location = location;
+}
+
+function inputBookInfo() {
+  var bookName = prompt("book name: ");
+  var bookAuthor = prompt("book author: ");
+  var bookLocation = prompt("book location: ");
+
+  var newBook = new addBook(bookName, bookAuthor, bookLocation);
+
+  books.push(newBook);
+}
+
+function searchBookByName(bookName) {
+  newBook.search("book name");
+}
